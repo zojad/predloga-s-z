@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "plugins": [
+    "office-addins"
+  ],
+  "extends": [
+    "plugin:office-addins/recommended",
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    // Office Add-in specific rules
+    "office-addins/no-office-initialize": "error",
+    "office-addins/prefer-async": "error",
+    
+    // JavaScript safety rules
+    "no-undef": "error",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  }
+}
