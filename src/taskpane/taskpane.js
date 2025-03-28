@@ -62,7 +62,9 @@ Office.onReady((info) => {
 function showError(message) {
   // Remove any existing error messages
   const oldError = document.getElementById("error-message");
-  if (oldError) oldError.remove();
+  if (oldError && oldError.parentNode) {
+    oldError.parentNode.removeChild(oldError);
+  }
 
   // Create and display new error message
   const errorDiv = document.createElement("div");
@@ -81,6 +83,9 @@ function showError(message) {
 
   // Auto-remove after 10 seconds
   setTimeout(() => {
-    errorDiv.remove();
+    if (errorDiv && errorDiv.parentNode) {
+      errorDiv.parentNode.removeChild(errorDiv);
+    }
   }, 10000);
 }
+
