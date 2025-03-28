@@ -4,7 +4,7 @@
            xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" 
            xsi:type="TaskPaneApp">
-  
+
   <Id>c2ae5a5d-2f09-4dff-9ee5-4f5af4ca7188</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>zojad</ProviderName>
@@ -14,7 +14,7 @@
   <IconUrl DefaultValue="https://localhost:3001/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3001/assets/icon-64.png"/>
   <SupportUrl DefaultValue="mailto:zojadominco@gmail.com"/>
-  
+
   <AppDomains>
     <AppDomain>https://localhost:3001</AppDomain>
   </AppDomains>
@@ -29,13 +29,11 @@
 
   <Permissions>ReadWriteDocument</Permissions>
 
-
   <VersionOverrides 
-  xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" 
-  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
-  xsi:type="VersionOverridesV1_0">
+    xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" 
+    xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
+    xsi:type="VersionOverridesV1_0">
 
-  
     <Hosts>
       <Host xsi:type="Document">
         <DesktopFormFactor>
@@ -51,7 +49,6 @@
                   <bt:Image size="80" resid="Icon.80x80"/>
                 </Icon>
 
-                <!-- Check Prepositions Button -->
                 <Control xsi:type="Button" id="CmdCheckPrepositions">
                   <Label resid="CmdCheckPrepositions.Label"/>
                   <Supertip>
@@ -68,7 +65,6 @@
                   </Action>
                 </Control>
 
-                <!-- Accept All Changes Button -->
                 <Control xsi:type="Button" id="CmdAcceptAll">
                   <Label resid="CmdAcceptAll.Label"/>
                   <Supertip>
@@ -85,7 +81,6 @@
                   </Action>
                 </Control>
 
-                <!-- Reject All Changes Button -->
                 <Control xsi:type="Button" id="CmdRejectAll">
                   <Label resid="CmdRejectAll.Label"/>
                   <Supertip>
@@ -102,7 +97,6 @@
                   </Action>
                 </Control>
 
-                <!-- Accept One Change Button -->
                 <Control xsi:type="Button" id="CmdAcceptOne">
                   <Label resid="CmdAcceptOne.Label"/>
                   <Supertip>
@@ -119,7 +113,6 @@
                   </Action>
                 </Control>
 
-                <!-- Reject One Change Button -->
                 <Control xsi:type="Button" id="CmdRejectOne">
                   <Label resid="CmdRejectOne.Label"/>
                   <Supertip>
@@ -171,5 +164,11 @@
         <bt:String id="CmdRejectOne.Description" DefaultValue="Reject only the selected incorrect preposition."/>
       </bt:LongStrings>
     </Resources>
+
+    <!-- WebView2 Support -->
+    <WebApplicationInfo>
+      <Id>c2ae5a5d-2f09-4dff-9ee5-4f5af4ca7188</Id>
+      <Resource>api://localhost:3001/c2ae5a5d-2f09-4dff-9ee5-4f5af4ca7188</Resource>
+    </WebApplicationInfo>
   </VersionOverrides>
 </OfficeApp>
