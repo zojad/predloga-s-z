@@ -165,10 +165,6 @@
       </bt:LongStrings>
     </Resources>
 
-    <!-- WebView2 Support -->
-    <WebApplicationInfo>
-      <Id>c2ae5a5d-2f09-4dff-9ee5-4f5af4ca7188</Id>
-      <Resource>api://localhost:3001/c2ae5a5d-2f09-4dff-9ee5-4f5af4ca7188</Resource>
-    </WebApplicationInfo>
+    
   </VersionOverrides>
 </OfficeApp>
