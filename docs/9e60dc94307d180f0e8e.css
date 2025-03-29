@@ -1,0 +1,182 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+/* ===== CORE STYLES ===== */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+    background-color: #f3f2f1;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ===== HEADER STYLES ===== */
+  .ms-welcome__header {
+    padding: 50px 20px 30px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+  }
+  
+  .ms-welcome__header h1 {
+    margin: 0;
+    color: #323130;
+  }
+  
+  /* ===== MAIN CONTENT AREA ===== */
+  .ms-welcome__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .ms-welcome__main h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    color: #605e5c;
+  }
+  
+  .ms-welcome__main p {
+    max-width: 600px;
+    margin: 10px 0 20px;
+    color: #605e5c;
+  }
+  
+  /* ===== BUTTON STYLES ===== */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .button-container .ms-Button {
+    margin: 5px 0;
+  }
+  
+  .ms-Button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ms-Button:focus {
+    box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.5);
+  }
+  
+  .ms-Button--primary {
+    background-color: #0078D4;
+    color: white;
+  }
+  
+  .ms-Button--primary:hover {
+    background-color: #005A9E;
+  }
+  
+  .ms-Button--success {
+    background-color: #107C10;
+    color: white;
+  }
+  
+  .ms-Button--success:hover {
+    background-color: #0B5E0B;
+  }
+  
+  .ms-Button--destructive {
+    background-color: #D83B01;
+    color: white;
+  }
+  
+  .ms-Button--destructive:hover {
+    background-color: #A52A00;
+  }
+  
+  .ms-Button--action {
+    background-color: #605E5C;
+    color: white;
+  }
+  
+  .ms-Button--action:hover {
+    background-color: #484644;
+  }
+  
+  /* ===== ERROR MESSAGE STYLES ===== */
+  #error-message {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto 0;
+    padding: 12px 20px;
+    background-color: #FDE7E9;
+    border: 1px solid #A80000;
+    border-radius: 4px;
+    color: #A80000;
+    font-size: 14px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-out;
+    display: none; /* Hidden by default */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* ===== HIGH CONTRAST MODES ===== */
+  /* For Safari and modern browsers */
+  @media screen and (prefers-contrast: more) {
+    #error-message {
+      background-color: transparent;
+      border: 2px solid currentColor;
+    }
+  }
+  
+  /* For Windows High Contrast */
+  @media (forced-colors: active) {
+    #error-message {
+      border: 2px solid transparent;
+      background-color: ButtonFace;
+      color: ButtonText;
+      border-color: Mark;
+    }
+  }
+  
+  /* ===== UTILITY STYLES ===== */
+  b {
+    font-weight: bold;
+    color: #323130;
+  }
+  
+  /* ===== RESPONSIVE ADJUSTMENTS ===== */
+  @media (max-width: 480px) {
+    .ms-welcome__header {
+      padding: 30px 15px;
+    }
+    
+    .ms-Button {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
