@@ -1,1 +1,56 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>S/Z Predloga</title><script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js" rel="noopener"></script><link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css" rel="noopener noreferrer"><link href="9e60dc94307d180f0e8e.css" rel="stylesheet"><script defer="defer" src="polyfill.bundle.js"></script><script defer="defer" src="taskpane.bundle.js"></script></head><body class="ms-font-m ms-welcome ms-Fabric"><header class="ms-welcome__header ms-bgColor-neutralLighter"><h1 class="ms-font-su">Predloga S/Z</h1></header><main id="app-body" class="ms-welcome__main"><h2 class="ms-font-xl">Preverite predloga S/Z v svojih dokumentih</h2><p class="ms-font-m">Orodje vam pomaga preveriti in popraviti rabo predlogov S/Z.</p><div class="button-container"><button class="ms-Button ms-Button--primary" id="checkTextButton"><span class="ms-Button-label">Check Document</span></button> <button class="ms-Button ms-Button--action" id="acceptChangeButton"><span class="ms-Button-label">Accept Change</span></button> <button class="ms-Button ms-Button--destructive" id="rejectChangeButton"><span class="ms-Button-label">Reject Change</span></button> <button class="ms-Button ms-Button--success" id="acceptAllButton"><span class="ms-Button-label">Accept All</span></button> <button class="ms-Button ms-Button--destructive" id="rejectAllButton"><span class="ms-Button-label">Reject All</span></button></div></main><script src="5958de0ced33983d0178.js" defer="defer"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S/Z Predloga</title>
+
+  <!-- Office JavaScript API -->
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js" rel="noopener"></script>
+
+  <!-- Fluent UI (for styling) -->
+  <link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css" rel="noopener noreferrer" />
+
+  <!-- Custom Styles -->
+  <link href="taskpane.css" rel="stylesheet" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+  <header class="ms-welcome__header ms-bgColor-neutralLighter">
+    <h1 class="ms-font-su">Predloga S/Z</h1>
+  </header>
+
+  <main id="app-body" class="ms-welcome__main">
+    <h2 class="ms-font-xl">Preverite predloga S/Z v svojih dokumentih</h2>
+    <p class="ms-font-m">Orodje vam pomaga preveriti in popraviti rabo predlogov S/Z.</p>
+
+    <!-- Buttons for checking and correcting prepositions -->
+    <div class="button-container">
+      <button class="ms-Button ms-Button--primary" id="checkTextButton">
+        <span class="ms-Button-label">Check Document</span>
+      </button>
+
+      <button class="ms-Button ms-Button--action" id="acceptChangeButton">
+        <span class="ms-Button-label">Accept Change</span>
+      </button>
+
+      <button class="ms-Button ms-Button--destructive" id="rejectChangeButton">
+        <span class="ms-Button-label">Reject Change</span>
+      </button>
+
+      <button class="ms-Button ms-Button--success" id="acceptAllButton">
+        <span class="ms-Button-label">Accept All</span>
+      </button>
+
+      <button class="ms-Button ms-Button--destructive" id="rejectAllButton">
+        <span class="ms-Button-label">Reject All</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- Load Custom JavaScript -->
+  <script src="polyfill.bundle.js" defer></script>
+  <script src="taskpane.bundle.js" defer></script>
+</body>
+</html>
